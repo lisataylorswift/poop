@@ -1,0 +1,19 @@
+# Bitrix specific
+/bitrix/managed_cache/
+/bitrix/cache/
+/bitrix/logs/
+/bitrix/backup/
+/bitrix/html_page/
+/bitrix/tmp/
+/bitrix/updates/
+/bitrix/.settings.php
+/bitrix/.user.php
+/upload/tmp/
+/upload/backup/
+/upload/bitrix/
+
+# Other common ignores
+.DS_Store
+*.log
+*.tmp
+*.bak
