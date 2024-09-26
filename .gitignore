@@ -1,0 +1,20 @@
+# Кэш и временные файлы
+/bitrix/cache/
+/bitrix/managed_cache/
+/bitrix/local_cache/
+/bitrix/stack_cache/
+/bitrix/tmp/
+/bitrix/logs/
+
+# Файлы резервных копий
+*.bak
+*.tar
+*.zip
+
+# Конфигурационные файлы
+/bitrix/.settings.php
+/bitrix/php_interface/dbconn.php
+
+# Локальные настройки
+.idea/
+/.vscode/
