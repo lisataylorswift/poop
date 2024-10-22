@@ -1,0 +1,251 @@
+.merch_page {
+    background-color: #edebe7;
+}
+
+ .container {
+    margin: 0;
+    width: 100%;
+    padding-bottom: 50px;
+
+}
+
+/* Кнопка Shop All начало */
+.shop-all {
+    background-color: #19191b;
+    color: white;
+    padding: 10px 20px;
+    float: right;
+    font-size: 1.4rem;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Псевдоэлемент с рамкой */
+.shop-all::before {
+    content: ''; 
+    position: absolute;
+    left: 0;
+    bottom: -100%; 
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff00; 
+    border: 1px solid #19191b;
+    transition: bottom 0.5s ease, background-color 0.5s ease; 
+}
+
+.shop-all:hover::before {
+    bottom: 0; 
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.shop-all:hover {
+    color: #19191b; 
+    background-color: transparent;
+}
+
+.container:hover a {
+    text-decoration: none;
+}
+
+/* Кнопка Shop All конец */
+
+
+.collection-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* justify-content: space-between; */
+    /* align-items: flex-start; */
+}
+
+.collection {
+    position: relative;
+    width: 100%; 
+    height: 100%; 
+    align-items: stretch;
+    object-fit: contain;
+    padding: 15px;
+    overflow: hidden;
+
+}
+
+.collection_container {
+    background-color: black;
+    /* position: absolute; */
+    object-position: center;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 15px;
+}
+
+.collection img {
+    position: absolute;
+    object-position: center;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.7; 
+    padding: 15px;
+
+}
+
+.text-overlay {
+    position: absolute;
+    bottom: 20px; 
+    left: 20px;
+    right: 20px;
+    color: white; 
+    padding: 15px;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.product {
+    width: 100%;
+    /* background-color: #ffffff00; */
+    padding: 15px;
+}
+
+.product h3 {
+    font-size: 16px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.product p {
+    font-size: 14px;
+    color: #888;
+}
+
+.product .price {
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+.nav-buttons {
+    display: flex;
+    margin-top: 10px;
+    justify-content: flex-end;
+    margin-right: 20px;
+    padding-right: 20px;
+}
+
+.nav-button {
+    background-color: #19191b;
+    color: white;
+    border: none;
+    height: 47px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 1px;
+}
+
+.hr-line {
+	margin: 20px;
+	padding: 0;
+	height: 0;
+	border: none;
+	border-top: 1px solid #333;
+}
+
+.product-image-wrapper {
+    position: relative;
+    width: 300px; 
+    height: 300px;
+}
+.product-image, .product-image-detail {
+    width: 300px; 
+    height: 300px;
+    position: absolute;
+    background-size: cover; 
+    background-position: center;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.product-image-detail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0; 
+}
+
+.product-image-wrapper:hover .product-image-detail {
+    opacity: 1; 
+}
+
+.product-image-wrapper:hover .product-image {
+    opacity: 0; 
+}
+
+.product:hover a {
+    text-decoration: none;
+}
+
+/*Detail Catalog*/
+
+.product__outer--slider-previews, .product__outer--stacked-gallery {
+    flex-direction: row;
+    padding-top: 4rem;
+}
+
+.product__outer--stacked-gallery .product__main {
+    max-width: 65%;
+    order: 1;
+}
+
+.product__outer--stacked-gallery.stacked-gallery_slider:not(.product__outer_single) .swiper-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: .4rem;
+}
+
+.product__outer--stacked-gallery .product__media-item.active {
+    order: -1;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.product__info-container>* {
+    margin: 0;
+    margin-top: 1.6rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.product-parameters {
+    display: flex;
+    justify-content: center;
+    pointer-events: all;
+}
+
+
+.product__info-container .trademark__logo {
+    max-height: 80px;
+}
+
+.product__info-container>* {
+    margin: 0;
+    margin-top: 1.6rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+

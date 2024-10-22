@@ -1,0 +1,53 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"Home", 
+		"/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Categories", 
+		"/categories", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Blog", 
+		"/posts", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Merch", 
+		"/merch/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Styles", 
+		"/novaya-stranitsa.php", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"About", 
+		"/about", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"", 
+		"", 
+		Array(), 
+		Array(), 
+		"" 
+	)
+);
+?>
